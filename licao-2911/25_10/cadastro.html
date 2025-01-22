@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tela de Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+
+</head>
+<body>
+    <div class="container-principal">
+        <div class="formulario">
+            <form id="form-cadastro" onsubmit="cadastrar(event)" >
+
+                <h3> Cadastro </h3>
+                <input type="text" placeholder="Usuário:" id="usuario" 
+                required="true" minlength="3" maxlength="15"/>
+
+                <br><br>
+
+                <input type="text" placeholder="E-mail:" id="email" 
+                required="true" minlength="3" maxlength="30"/>
+
+                <br><br>
+
+                <input type="password" placeholder="Senha" id="senha"
+                required="true" minlength="5" maxlength="8"/>
+
+                <br><br>
+                <input type="submit" value="Cadastrar" onclick="cadastrar(); return false"/> 
+
+            </form>
+    
+    </div>
+
+    <script src="cadastro.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
